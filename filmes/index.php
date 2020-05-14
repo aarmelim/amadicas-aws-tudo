@@ -60,7 +60,7 @@
                             <i class="fa fa-pencil"></i> 
                             Editar
                         </a> 
-                        <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-filme="<?php echo $filme['id']; ?>"> 
+                        <a href="delete.php?id=<?php echo $filme['id']; ?>" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-filme="<?php echo $filme['id']; ?>"> 
                             <i class="fa fa-trash"></i> 
                             Excluir 
                         </a> 
@@ -75,6 +75,5 @@
     </tbody>
 </table>
 
-<?php 
-    include(FOOTER_TEMPLATE); 
-?>
+<?php include('modal.php'); ?>
+<?php include(FOOTER_TEMPLATE); ?>

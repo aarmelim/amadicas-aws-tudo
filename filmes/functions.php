@@ -42,3 +42,16 @@ function edit() {
         header('location: index.php');	  
         }
 }
+
+/**	 *  Visualização de um Cliente	 */	
+function view($id = null) {	  
+    global $filme;	  
+    $filme = find('filmes', $id);	
+}
+
+/**	 *  Exclusão de um Cliente	 */	
+function delete($id = null) {	
+    global $filme;	  
+    $filme = remove('filmes', $id);	
+    header('location: index.php');	
+}
